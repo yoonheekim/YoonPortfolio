@@ -196,13 +196,16 @@
 }
 .portfolio-section {
   padding: 5rem 0;
-  background: rgba(204, 204, 204); 
+  background-color: #cccccc; 
 }
 
 .portfolio-section .project-text {
   padding: 3rem;
   font-size: 90%;
   text-shadow: 1px 1px grey;
+}
+.project-div{
+  border: solid 1px #999999;
 }
 
 @media (min-width: 992px) {
@@ -216,6 +219,9 @@
   }
   .portfolio-section{
     background-color: rgba(244, 245, 246);
+  }
+  .project-div{
+    border: none;
   }
 }
 
