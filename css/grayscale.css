@@ -93,7 +93,6 @@
   min-height: 35rem;
   padding: 15rem 0;
   background: url("../img/emile-perron-190221-unsplash.jpg");
-  background: url("../img/emile-perron-190221-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -181,7 +180,8 @@
 }
 .portfolio-section {
   padding: 5rem 0;
-  background: rgba(244, 245, 246);
+  background: grey
+  /* rgba(244, 245, 246); */
 }
 
 .about-section .featured-text {
@@ -317,9 +317,6 @@ a:focus, a:hover {
   color: #3c6360;
 }
 
-.bg-black {
-  background-color: #161616 !important;
-}
 
 .bg-primary {
   background-color: #64a19d !important;
