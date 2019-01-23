@@ -180,8 +180,7 @@
 }
 .portfolio-section {
   padding: 5rem 0;
-  background: lightgray;
-  /* rgba(244, 245, 246); */
+  background: rgba(245, 245, 245); 
 }
 
 .about-section .featured-text {
