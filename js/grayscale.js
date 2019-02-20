@@ -42,5 +42,25 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  var $grid = $('.grid').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    // masonry: {
+    //     // use element for option
+    //     columnWidth: '.grid-sizer'
+    // }
+  });
+
+        /*--------------------------------
+            01. Isotope Plugin
+        ----------------------------------*/
+      
+        //-- filter items on button click --//
+  $("#portfolio ul li").on('click', function () {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+      $(this).addClass("active_filter").siblings().removeClass("active_filter");
+  });
 });
